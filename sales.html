@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Data</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body
+    style="
+      background: url('cartoonSalmon.png') no-repeat center center fixed;
+      background-size: cover;
+    "
+  >
+    <header>
+      <h1 split-by="letter" letter-animation="breath">Sales Data!</h1>
+    </header>
+
+    <main>
+      <main>
+        <h3 id="home-link"><a href="./index.html">Home</a></h3>
+        <table id="table"></table>
+
+        <fieldset>
+          <legend>Create a new store</legend>
+          <form id="form">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" required />
+
+            <label for="min">Min Customer per Hour:</label>
+            <input
+              type="number"
+              name="min"
+              id="min"
+              step="any"
+              required
+              min="0"
+            />
+
+            <label for="max">Max Customer per Hour:</label>
+            <input
+              type="number"
+              name="max"
+              id="max"
+              step="any"
+              required
+              min="0"
+            />
+
+            <label for="avg">Avg Sale per Customer:</label>
+            <input
+              type="number"
+              name="avg"
+              id="avg"
+              step="any"
+              required
+              min="0"
+            />
+
+            <button>Submit</button>
+          </form>
+        </fieldset>
+      </main>
+    </main>
+  </body>
+</html>
