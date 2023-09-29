@@ -1,4 +1,3 @@
-// Store the min/max hourly customers, and the average cookies per customer, in object properties.
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
